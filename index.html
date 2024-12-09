@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe Sharing Website</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            padding-top: 56px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Content goes here -->
+</body>
+</html>
+<header class="bg-primary text-white text-center py-5">
+    <h1>Welcome to the Recipe Sharing Website</h1>
+</header>
+<section class="container my-5">
+    <p>Explore, view, and submit your favorite recipes. Whether you're looking for breakfast inspiration or dinner ideas, you'll find it all here!</p>
+</section>
+<div class="container">
+    <div class="row">
+        <div class="col-md-6">
+            <h2>Featured Recipe</h2>
+            <p>Discover the most popular recipes of the week!</p>
+        </div>
+    </div>
+</div>
+<style>
+    .highlight {
+        color: #ff6347;
+        background-color: #f0e68c;
+    }
+</style>
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>Ingredient</th>
+            <th>Quantity</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Flour</td>
+            <td>2 cups</td>
+        </tr>
+        <!-- More rows -->
+    </tbody>
+</table>
+<img src="path-to-image.jpg" class="img-fluid rounded" alt="Delicious Dish">
+<div class="container">
+    <div class="row">
+        <div class="col-lg-4 col-md-6 col-sm-12">
+            <h2>Recipe Category</h2>
+            <p>Brief description of the category.</p>
+        </div>
+        <!-- More columns -->
+    </div>
+</div>
+<form class="container my-5">
+    <div class="form-group">
+        <label for="recipeTitle">Recipe Title</label>
+        <input type="text" class="form-control" id="recipeTitle" required>
+    </div>
+    <div class="form-group">
+        <label for="ingredients">Ingredients</label>
+        <textarea class="form-control" id="ingredients" rows="5" required></textarea>
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+    <a class="navbar-brand" href="#">Recipe Sharing</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="#home">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#categories">Categories</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#submit">Submit Recipe</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+<p>For more recipes, visit <a href="https://www.example.com">Example.com</a>.</p>
+<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img src="recipe1.jpg" class="d-block w-100" alt="Recipe 1">
+        </div>
+        <!-- More carousel items -->
+    </div>
+    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+    </a>
+</div>
+<div class="container" id="categories">
+    <div class="row">
+        <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="card">
+                <img src="breakfast.jpg" class="card-img-top" alt="Breakfast">
+                <div class="card-body">
+                    <h5 class="card-title">Breakfast</h5>
+                    <p class="card-text">Start your day with these delicious breakfast recipes.</p>
+                    <a href="#" class="btn btn-primary">See Recipes</a>
+                </div>
+            </div>
+        </div>
+        <!-- More categories -->
+    </div>
+</div>
+<div class="container my-5">
+    <h2>Recipe Title</h2>
+    <img src="final-dish.jpg" class="img-fluid rounded mb-3" alt="Final Dish">
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>Ingredient</th>
+                <th>Quantity</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Flour</td>
+                <td>2 cups</td>
+            </tr>
+            <!-- More ingredients -->
+        </tbody>
+    </table>
+    <h3>Instructions</h3>
+    <ol>
+        <li>Step 1: Do this...</li>
+        <li>Step 2: Do that...</li>
+        <!-- More steps -->
+    </ol>
+</div>
+<div class="container my-5" id="submit">
+    <h2>Submit Your Recipe</h2>
+    <form>
+        <div class="form-group">
+            <label for="recipeTitle">Recipe Title</label>
+            <input type="text" class="form-control" id="recipeTitle" required>
+        </div>
+        <div class="form-group">
+            <label for="ingredients">Ingredients</label>
+            <textarea class="form-control" id="ingredients" rows="5" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+        <div class="alert alert-success mt-3" role="alert">
+            Your recipe has been submitted!
+        </div>
+    </form>
+</div>
+<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+    <a class="navbar-brand" href="#">Recipe Sharing</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+                <a class="nav[_{{{CITATION{{{_1{](https://github.com/sk12r/FinalExam_5738029/tree/2bfa6f800631999bead0c4e899d4253c2eda2e8b/reportform.php)[_{{{CITATION{{{_2{](https://github.com/Agilbay04/VLMS-JTI/tree/ac9dee3ecf421da62ff9cf5b76dee9de633b83de/bootstrap-4.6.0%2Fsite%2Fcontent%2Fdocs%2F4.6%2Fcomponents%2Fnavbar.md)[_{{{CITATION{{{_3{](https://github.com/Saurabh-Pandey79/BusinessWebsiteForACServicing/tree/06791782a0aed87eccfdc62cee66dea31231e696/about.php)[_{{{CITATION{{{_4{](https://github.com/MaxAlphaEngineer/inlab/tree/d9b9d28a382d710ee8038219d9a62d4943511abf/resources%2Fviews%2Fhome.blade.php)[_{{{CITATION{{{_5{](https://github.com/guillaumepoucet/portfolio/tree/b726b507273b866792005a938f08723e80654777/nav.php)[_{{{CITATION{{{_6{](https://github.com/syn-arch/movieus/tree/00daea021eb3af6a58a7ede7d9c3eeee8142b3ba/assets%2Fjs%2Fcomponent%2Fmy-navbar.js)[_{{{CITATION{{{_7{](https://github.com/harisnovrial/angkel_PPL/tree/fffb182874535cc17166dce6c3ddbedd984b8341/index.php)[_{{{CITATION{{{_8{](https://github.com/rahul-10-byte/Covid-Tracker/tree/7bc5358277fd328c86d10ebc302f08f80b965f13/worldcorona.php)[_{{{CITATION{{{_9{](https://github.com/mhatreapurva/webportalforvaranasi/tree/8f223c4f98485847f0692272c56853723f050892/test.php)[_{{{CITATION{{{_10{](https://github.com/Benbinbin/tech-blog/tree/c1d0a80f1dfd987509b561b320782beb8eee02db/docs%2Fweb%2FUI-Framework%2FBootstrap%2F%E7%BB%84%E4%BB%B6.md)[_{{{CITATION{{{_11{](https://github.com/SheetalBhyravajosula/ProjectsTracker/tree/ab12a4bbda2d9f365710bc648bb2067e0e08e5e9/public%2Flibs%2Fbootstrap%2Fsite%2Fcontent%2Fdocs%2F4.6%2Fcomponents%2Fcarousel.md)[_{{{CITATION{{{_12{](https://github.com/nishantsaiju/odas/tree/00aec4edeabad7a13b573bef44dc56bfd3240591/slider.php)[_{{{CITATION{{{_13{](https://github.com/amirul6265/IIUM-Micro-Credentials/tree/7e8d5044cedbb4a53dd7cb314998629af63088af/resources%2Fviews%2Fhome.blade.php)[_{{{CITATION{{{_14{](https://github.com/twoplus/wsb_projekt1/tree/0e8f949e11bcd57976d049220d70622e83c28588/.history%2Fsrc%2Fviews%2Fhome_20200503200824.js)
